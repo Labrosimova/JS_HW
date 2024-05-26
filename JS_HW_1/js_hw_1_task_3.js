@@ -5,10 +5,11 @@ function randomN(min, max) {
     let n = min + Math.random() * (max + 1 - min);
     return Math.floor(n);
   };
+  let n = randomN(1, 9);
   console.log(
-    randomN(1, 9)  
+    n
     + " " + "+" + " " 
-    + (String(randomN(1, 9)) + String(randomN(1, 9))) 
+    + n + n
     + " " + "+" + " " 
-    + (String(randomN(1, 9)) + String(randomN(1, 9)) + String(randomN(1, 9)))
+    +  n + n + n
 );
