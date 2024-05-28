@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Преобразовать Task 2* таким образом, чтобы age принимался через prompt в привязанной вёрстке, а результат выводился в alert
+"use strict";
+const minAge = 18; 
+const maxAge = 60;
+let age;
+age = prompt("What's your age?",); 
+const numberedAge = Number(age); 
+alert(numberedAge);
+if (isNaN(numberedAge)) {
+    alert("Oops! The value is NaN. Please try again!");
+} else {
+switch (true) {
+    case typeof (numberedAge) !== "number":
+    alert("Oops! The value is NaN. Please try again!");
+    break;
+
+    case (numberedAge < minAge) : 
+    alert("You don't have access cause your age is " + age + " It's less then " + minAge);
+    break;
+
+    case (numberedAge >= minAge && numberedAge <= maxAge):
+    alert("Welcome !");
+    break;
+
+    case (numberedAge > maxAge) : 
+    alert("Keep calm and look Culture channel");
+    break;
+
+    default:
+    alert("Technical work");
+}
+};
+        </script>
+</body>
+</html>
