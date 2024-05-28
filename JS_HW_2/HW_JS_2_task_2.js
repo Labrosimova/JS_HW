@@ -33,11 +33,10 @@
 // 3. Преобразовать Task 2 - 1 таким образом, чтобы значение НАПРИМЕР '2' (т.е. ЛЮБАЯ строка в которой лежат ТОЛЬКО ЦИФРЫ) пропускалось, преобразовываясь в number
 const minAge = 18; 
 const maxAge = 60;
-let age;
-age = "18"; 
+let age = "18"; 
 const numberedAge = age*1; // 3. Преобразовать Task 2 - 1 таким образом, чтобы значение НАПРИМЕР '2' (т.е. ЛЮБАЯ строка в которой лежат ТОЛЬКО ЦИФРЫ) пропускалось, преобразовываясь в number
 switch (true) {
-    case typeof (numberedAge) !== "number":
+    case isNaN(numberedAge):
     console.log("Oops! The value is NaN. Please try again!");
     break;
 

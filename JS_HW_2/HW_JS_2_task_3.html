@@ -11,18 +11,13 @@
 "use strict";
 const minAge = 18; 
 const maxAge = 60;
-let age;
-age = prompt("What's your age?",); 
-const numberedAge = Number(age); 
-alert(numberedAge);
-if (isNaN(numberedAge)) {
+let age = prompt("What's your age?",); 
+
+if (isNaN(age)) {
     alert("Oops! The value is NaN. Please try again!");
 } else {
+    const numberedAge = Number(age); 
 switch (true) {
-    case typeof (numberedAge) !== "number":
-    alert("Oops! The value is NaN. Please try again!");
-    break;
-
     case (numberedAge < minAge) : 
     alert("You don't have access cause your age is " + age + " It's less then " + minAge);
     break;
